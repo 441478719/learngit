@@ -1,0 +1,73 @@
+page-scanner {
+   
+    background-color: transparent !important;
+    html,body,ion-app,ion-content,ion-page,show-page,.nav-dector{
+        background-color: transparent !important;
+        
+    }
+    .line{
+        position: absolute;
+        left: 0px;
+        height: 2px; width: 200px;
+        background: red; 
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -ms-filter: blur(2px);    
+        filter: blur(2px); 
+        animation: scan 2s infinite alternate;
+        -webkit-animation: scan 2s infinite alternate;
+    }
+    .scan-content{
+        position: fixed; 
+        width: 200px; 
+        // margin:auto;
+        height: 200px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: linear-gradient(to left, #f00, #f00) left top no-repeat, 
+                    linear-gradient(to bottom, #f00, #f00) left top no-repeat, 
+                    linear-gradient(to left, #f00, #f00) right top no-repeat,
+                    linear-gradient(to bottom, #f00, #f00) right top no-repeat, 
+                    linear-gradient(to left, #f00, #f00) left bottom no-repeat,
+                    linear-gradient(to bottom, #f00, #f00) left bottom no-repeat,
+                    linear-gradient(to left, #f00, #f00) right bottom no-repeat,
+                    linear-gradient(to left, #f00, #f00) right bottom no-repeat;
+        background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;  
+        
+    }
+    .font
+    {   
+        position: absolute;
+        bottom: -30%;
+        text-align: center;
+    }
+    @keyframes scan {
+        from{
+            top: 0px;
+        }
+        to{
+            top: 200px;
+        }
+    }
+    @-webkit-keyframes  scan{
+        from{
+            top: 0px;
+        }
+        to{
+            top: 200px;
+        }
+    }
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        height: 200px;
+        width: 100%;
+        background: black;
+        text-align: center;
+    }
+
+ion-app.md{
+    background-color: transparent !important;
+}
+}

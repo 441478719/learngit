@@ -1,0 +1,18 @@
+
+
+<div>
+  <ion-icon name="close" style="font-size: 20px;margin-left:10px;" (click)="back()"></ion-icon>
+</div>
+
+<div class="scan-content">
+  <div class="line"></div>
+  <div class="font" >将二维码/条码放入框内，可自动扫描</div>
+  <!-- <div class="font">我的二维码</div>   -->
+</div>
+<div class="footer">
+  <div style="margin-top:30px;">
+    <img src="assets/imgs/scan/flashlight2.jpg" alt="" (click)="openlight()">
+    <div *ngIf="lightFlag==false" style="color:white;margin-top:10px;">打开手电筒</div>
+    <div *ngIf="lightFlag==true"  style="color:white;margin-top:10px;">关闭手电筒</div>
+  </div>
+</div>
